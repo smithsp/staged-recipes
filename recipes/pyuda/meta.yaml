@@ -1,0 +1,30 @@
+package:
+  name: pyuda
+  version: 2.1.1
+
+source:
+  git_rev: 98dbe8d6711
+  git_url: ssh://git@git.iter.org/imas/uda.git
+
+requirements:
+  host:
+    - python
+    - setuptools
+    - openssl
+    - boost
+    - swig
+
+  run:
+    - python
+    - future
+    - numpy
+    - matplotlib
+
+test:
+  imports:
+    - pyuda
+
+about:
+  home: https://git.iter.org/projects/IMAS/repos/uda/browse
+  license: ITER
+  license_file: LICENCE.txt
